@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <title>EvBulur</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fa-regular fa-building" style="color: rgb(57, 81, 212);"></i>EvBulur</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about">Hakkımızda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Konutlar</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="residence">Rezidans</a></li>
+            <li><a class="dropdown-item" href="villa">Villa</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="apartment">Daire</a></li>
+            <li><a class="dropdown-item" href="mansion">Köşk</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="projects">Projeler</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="team">Ekibimiz</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="contact">İletişim</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Arama</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/img/rezidans-daire-nedir.jpg" class="d-block w-100" alt="residence">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/img/studyo-daire-ne-demektir-5.jpg" class="d-block w-100" alt="apartment">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/img/villa-agnus-33_678.jpg" class="d-block w-100" alt="villa">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+        <img src="/img/94A72916-6F3A-49EF-B03D-E53A832D74A1.jpeg" class="d-block w-100" alt="mansion">
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/img/Daire/daire5.jpeg" class="img-fluid rounded-start" alt="apartment">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tenetur.</p>
+        <a href="#" class="btn btn-primary">Daha Fazla Bilgi</a>
+        <a href="#" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i>Whatsapp'tan bize ulaşın...</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/img/Köşk/kosk7.jpg" class="img-fluid rounded-start" alt="mansion">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, veniam.</p>
+        <span class="price">50000</span>
+        <a href="#" class="btn btn-primary">Daha Fazla Bilgi</a>
+        <a href="#" class="btn btn-success"><i class="fa-brands fa-whatsapp"></i>Whatsapp'tan bize ulaşın.</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2026 Company, Inc. All rights reserved</p>
+    <ul class="list-unstlyed d-flex">
+        <li class="ms-3"><a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/><i class="fa-brands fa-instagram"></i></svg></a></li>
+        <li class="ms-3"><a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/><i class="fa-brands fa-twitter"></i></svg></a></li>
+        <li class="ms-3"><a href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/><i class="fa-brands fa-linkedln"></svg></a></li>
+    </ul>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
