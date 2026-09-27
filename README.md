@@ -1,0 +1,3 @@
+-Proje bir çok sayfadan oluşmaktadır.
+-Bu sadece bir geliştirme projesi
+-
