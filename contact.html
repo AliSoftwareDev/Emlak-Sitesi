@@ -3,92 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - EvBulur</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./Css/style.css">
-    <title>İletişim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><i class="fa-regular fa-building" style="color: rgb(57, 81, 212);"></i>EvBulur</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html">Anasayfa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">Hakkımızda</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Konutlar</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item"  href="residence.html">Rezidanslar</a></li>
-            <li><a class="dropdown-item" href="villa.html">Villalar</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="apartment.html">Daireler</a></li>
-            <li><a class="dropdown-item" href="mansion.html">Köşkler</a></li>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fa-regular fa-building"></i> EvBulur
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Hakkımızda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Konutlar</a>
+              <ul class="dropdown-menu border-0 shadow-sm" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="residence.html">Rezidans</a></li>
+                <li><a class="dropdown-item" href="villa.html">Villa</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="apartment.html">Daire</a></li>
+                <li><a class="dropdown-item" href="mansion.html">Köşk</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projeler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Ekibimiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">İletişim</a>
+            </li>
           </ul>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="projects.html">Projeler</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="team.html">Ekibimiz</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">İletişim</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Arama</button>
-      </form>
-    </div>
-  </div>
-</nav>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="İlan Ara..." aria-label="Search">
+            <button class="btn btn-primary-custom" type="submit">Ara</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-<form class="form">
-      <div class="flex">
-        <label>
-          <span>İsim</span>
-            <input class="input" type="text" placeholder="İsminizi Giriniz" required="">
-        </label>
+    <main class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1 class="fw-bold">Bizimle İletişime Geçin</h1>
+          <p class="text-muted">Gayrimenkul talepleriniz, sorularınız ve detaylı bilgi için bize ulaşabilirsiniz.</p>
+        </div>
 
-        <label>
-          <span>Soyisim</span>
-            <input class="input" type="text" placeholder="Soyadınızı Giriniz" required="">
-        </label>
-    </div>  
-            
-    <label>
-      <span>email</span>
-        <input class="input" type="email" placeholder="E-Mailinizi Giriniz" required="">
-    </label> 
-        
-    <label>
-      <span>İletişim Numarası</span>
-        <input class="input" placeholder="Telefon Numara" type="tel" required="">
-    </label>
-    <label>
-      <span>Mesaj</span>
-        <textarea class="input01" placeholder="Mesajınızı yazınız" rows="3" required=""></textarea>
-    </label>
-    
-    <button href="#" class="fancy">
-      <span class="top-key"></span>
-      <span class="text">Gönder</span>
-      <span class="bottom-key-1"></span>
-      <span class="bottom-key-2"></span>
-    </button>
-</form>
+        <div class="row g-4 mb-5">
+          <div class="col-md-4">
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-info-content">
+                <h5>Ofis Adresimiz</h5>
+                <p>Atatürk Bulvarı No: 124/A<br>Merkez / Düzce</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-info-content">
+                <h5>Telefon</h5>
+                <p>+90 (380) 444 0 123<br>+90 (532) 000 00 00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-info-content">
+                <h5>E-Posta Adresi</h5>
+                <p>info@evbulur.com<br>destek@evbulur.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="contact-form-wrapper">
+              <h3 class="fw-bold mb-4">Mesaj Gönderin</h3>
+              <form action="#" method="POST">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">İsim</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="İsminizi giriniz" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Soyisim</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Soyadınızı giriniz" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">E-Posta</label>
+                    <input type="email" class="form-control" id="email" placeholder="E-posta adresiniz" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">Telefon Numarası</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="05XX XXX XX XX" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Mesajınız</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Talep veya sorularınızı buraya yazabilirsiniz..." required></textarea>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-primary-custom w-100 py-3 fs-6">
+                      <i class="fa-solid fa-paper-plane me-2"></i> Gönder
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
 
+          <div class="col-lg-5">
+            <div class="map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195884.30043024124!2d32.62268087968504!3d39.903555698305016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d347d520732db1%3A0xbdc57b0c0842b8d!2sAnkara!5e0!3m2!1str!2str!4v1680000000000!5m2!1str!2str" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    </main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">&copy; 2026 EvBulur Gayrimenkul. Tüm hakları saklıdır.</p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
+            <div class="social-links">
+              <a href="https://wa.me/905000000000" target="_blank" class="social-btn" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="#" class="social-btn" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="social-btn" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
